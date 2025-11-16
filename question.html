@@ -2,12 +2,21 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
         <title>Questions</title>
     </head>
 
     <body>
+            <div id="parthenonheader">
+                <h1 style="background-color: #641B2E; font-size: 50px; vertical-align: center; color: #8A2D3B;">Parthenon Interviews</h1>
+            </div>
+
+
         <div id="form">
-            <h1>Questions</h1>
+            <h1 style="font-size: 50px; font-family: pacifico;">Questions</h1>
             <form>
                 <label for="name">Name:</label><br>
                 <input type="text" id="name" name="name" required><br><br>
@@ -16,22 +25,22 @@
                 <input type="text" id="contact" name="contact" required><br><br>
 
                 <label for="why">Why did you start coding?</label><br>
-                <input type="text" id="why" name="why" required><br><br>
+                <textarea type="text" id="why" name="why" required></textarea><br><br>
 
                 <label for="struggles">What were some struggles in general?</label><br>
-                <input type="text" id="struggles" name="struggles" required><br><br>
+                <textarea type="text" id="struggles" name="struggles" required></textarea><br><br>
 
                 <label for="overcome">How did you overcome such struggles?</label><br>
-                <input type="text" id="overcome" name="overcome" requried><br><br>
+                <textarea type="text" id="overcome" name="overcome" requried></textarea><br><br>
 
                 <button type="submit">Submit</button>
-            </form>
-        </div><br><hr>
-
+        <br><hr>
     <footer>
         <p><b>Created by: Jieeun
         <br><br><a href="https://github.com/Froggy1018">My Github</a> | <a href="https://www.instagram.com/jess_bob18/">My Instagram</a></b></p>
     </footer>
+    </form>
+    </div>
 
         <script src="app.js"></script>
     </body>

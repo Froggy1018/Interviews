@@ -5,7 +5,7 @@
 
 header{
     text-align: center;
-    background-image: url(https://cdn.britannica.com/54/150954-050-F8D14782/Night-view-Parthenon-Athens.jpg);
+    background-image: url(https://www.historyhit.com/app/uploads/bis-images/5150285/The-Parthenon-788x537.jpg?x81146);
     background-size: cover;
     padding: 277px;
     font-family: pacifico;
@@ -51,9 +51,35 @@ button{
     border: none;
     border-radius: 10px;
     margin-top: 10px;
+    margin-bottom:20px;
 
     &:hover{
         color:#8A2D3B;
         background: #BE5B50;
     }
+}
+
+#form{
+    background-color: #641B2E;
+    color:white;
+    font-family: pacifico;
+}
+
+#parthenonheader{
+    text-align: center;
+    background-image: url(https://www.historyhit.com/app/uploads/bis-images/5150285/The-Parthenon-788x537.jpg?x81146);
+    background-size: cover;
+    padding: 50px;
+    font-family: pacifico;    
+}
+
+label{
+    font-size: 30px;
+}
+
+input, textarea{
+    padding: 10px 20px;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 15px;
 }
