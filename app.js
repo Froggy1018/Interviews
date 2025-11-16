@@ -1,3 +1,4 @@
+
 document.addEventListener('DOMContentLoaded', function(){
     const form = document.querySelector('#form form');
     if(!form) return;
@@ -5,7 +6,12 @@ document.addEventListener('DOMContentLoaded', function(){
     form.addEventListener('submit', function(e) {
         e.preventDefault();
         
-        const data = new FormData(form);
+        const data = new FormData();
+        data.append('entry.1960824641', document.getElementById('name')?.value || '');
+        data.append('entry.326120523', document.getElementById('contact')?.value || '');
+        data.append('entry.1847306347', document.getElementById('why')?.value || '');
+        data.append('entry.1572120235', document.getElementById('struggles')?.value || '');
+        data.append('entry.595161132', document.getElementById('overcome')?.value || '');
 
         fetch('https://docs.google.com/forms/d/e/1FAIpQLSfdTliXv1FtplR6cPlw5jXQpw8V_T6tBigU2zSluqOT7pW7fQ/formResponse', {
             method: 'POST',
